@@ -1,4 +1,4 @@
-# ../gungame/plugins/included/gg_no_cash/info.py
+# ../gungame/plugins/custom/gg_no_cash/info.py
 
 """Contains plugin information."""
 
