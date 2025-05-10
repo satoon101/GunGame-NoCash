@@ -2,9 +2,9 @@
 
 """Keep player cash always set to 0."""
 
-# ============================================================================
+# =============================================================================
 # >> IMPORTS
-# ============================================================================
+# =============================================================================
 # Python
 from contextlib import suppress
 
@@ -17,7 +17,7 @@ from players.entity import Player
 # =============================================================================
 # >> ENTITY HOOKS
 # =============================================================================
-@EntityPostHook(EntityCondition.is_player, 'add_account')
+@EntityPostHook(EntityCondition.is_player, "add_account")
 def _set_cash(args, return_value):
     with suppress(ValueError):
         make_object(Player, args[0]).cash = 0
